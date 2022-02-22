@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>Grupo-5 </title>
+  </head>
+  <body>
+    <div id="container">
+
+    </div>
+
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+
+    <script>
+      var h1 = React.createElement("h1", {style:{ color:'blue', backgroundColor: '#FFF' }, id: "title"}, "Hello World");
+      var h2 = React.createElement("h2", { style: { color: 'green' }, id: "title" }, "Equipe 5  ");
+      var Katherine = React.createElement("h2", { style: { color: 'black' }, id: "katherine" }, "Katherine Duarte");
+      var Ronaldo = React.createElement("h2", { style: { color: 'black' }, id: "Ronaldo" }, "Ronaldo Fonseca");
+      var Rafael = React.createElement("h2", { style: { color: 'black' }, id: "Rafael" }, "Rafael Nobre");
+      var Carlos = React.createElement("h2", { style: { color: 'black' }, id: "Carlos" }, "Carlos Ferreira");
+      var Joao = React.createElement("h2", { style: { color: 'black' }, id: "Joao" }, "João Eloi");
+      var descricao = React.createElement("p",{ style: { color: 'black' }, id: "descricao" }, "Mesa de Trabalho - Aula 1")
+     
+      
+
+      var container = React.createElement("div",{},[ h1, h2, Katherine, Ronaldo,Rafael, Carlos, Joao, descricao ]);
+
+      ReactDOM.render(container, document.getElementById("container"));
+    </script>
+  </body>
+</html>
