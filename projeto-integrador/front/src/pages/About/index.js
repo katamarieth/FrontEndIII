@@ -1,10 +1,16 @@
-import "./styles.css";
 
-export default function About() {
+import AboutUs from '../../components/AboutUs';
+
+
+const About = () => {
     return (
-        <div>
-            <h1>hello world</h1>
-        </div>
-   )
-}
-
+      <>
+        <title>Sobre nós</title>
+      
+        <AboutUs />
+        
+      </>
+    );
+  }
+  export default About;
+  

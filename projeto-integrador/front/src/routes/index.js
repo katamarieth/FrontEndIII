@@ -1,28 +1,29 @@
-//import { BrowserRouter, Routes, Route } from "react-router-dom";
-//import About from '../pages/About';
-//import Adm from '../pages/Adm';
-//import Cart from '../pages/Cart';
-//import Categorys from '../pages/Categorys';
-//import Home from '../pages/Home';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Header from '../components/Header';
+import Home from '../pages/Home';
+import About from '../pages/About';
+import Products from '../pages/Products';
+import Adm from '../pages/Adm';
+import Footer from '../components/Footer';
 
-//function Paginas () {
-//   return (
-//        <BrowserRouter>
-//            <Routes>
-//                <Route>
- //                   <Route path="/"element={<About />}/>
- //                   <Route path="/" element={<Home />} />
-//                    <Route path="/" element={<Adm />} />
-//                    <Route path="/" element={<Home />} />
-//                    <Route path="/" element={<Cart />} />
-//                    <Route path="/" element={<Categorys />} />
-//                    
-//                </Route>
-//            </Routes>
-//        </BrowserRouter>
-//    )
+
+
+const Paginas = () => {
+  return(
+       <BrowserRouter>        
+          <Header />
+            <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/sobrenos" element ={<About />} />
+        <Route path="/produtos" element={<Products />} />
+        <Route path="/administracao" element ={<Adm />} />
+                           
+      </Routes>
+      <Footer/>
+       </BrowserRouter>
+   )
     
-//};
+};
 
-//export default Paginas;
+export default Paginas;
 
